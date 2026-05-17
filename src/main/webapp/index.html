@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Eagles Defense Stats</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="icons/more_icons/music_notes.png">
+
+    <link href="style/main.css" rel="stylesheet" type="text/css" />
+    <link href="style/dropDown.css" rel="stylesheet" type="text/css" />
+    <link href="style/myDropDown.css" rel="stylesheet" type="text/css" />
+    <link href="style/home.css" rel="stylesheet" type="text/css" />
+    <link href="style/blog.css" rel="stylesheet" type="text/css" />
+    <link href="style/style.css" rel="stylesheet" type="text/css" />
+    <link href="style/defender.css" rel="stylesheet" type="text/css" />
+    <link href="style/clickSort.css" rel="stylesheet" type="text/css" />
+    <link href="style/defender_CGF.css" rel="stylesheet" type="text/css" />
+    <link href="style/account.css" rel="stylesheet" type="text/css" />
+    <link href="style/insertUpdate.css" rel="stylesheet" type="text/css" />
+
+
+    <script src='https://unpkg.com/react@18/umd/react.production.min.js'></script>
+    <script src='https://unpkg.com/react-dom@18/umd/react-dom.production.min.js'></script>
+    <script src='https://unpkg.com/babel-standalone@6.26.0/babel.js'></script>
+    <script src='https://unpkg.com/react-router-dom@5.0.0/umd/react-router-dom.min.js'></script>
+</head>
+
+<body>
+    <div id="root"></div>
+
+    <script src="_JS_reusable/ajax_alt.js"></script>
+    <script src="_JS_reusable/dropDownFW.js"></script>
+    <script src="_JS_reusable/jsSort.js"></script>
+    <script src="_JS_reusable/filterObjList.js"></script>
+    <script src="_JS_reusable/MakeDefender.js"></script>
+
+    <script src="_JS_CGF/MakeDefender_CGF.js"></script>
+
+    <script type="text/babel" src="_React_reusable/ConvertEle.js"></script>
+    <script type="text/babel" src="_React_reusable/WebUserDisplay.js"></script>
+
+    <script type="text/babel" src="_React_CGF/StatsInsertOrUpdate.js"></script>
+    <script type="text/babel" src="_React_CGF/UserInsertOrUpdate.js"></script>
+    <script type="text/babel" src="_React_CGF/HomeR.js"></script>
+    <script type="text/babel" src="_React_CGF/BlogR.js"></script>
+    <script type="text/babel" src="_React_CGF/UserFilterSortTable.js"></script>
+    <script type="text/babel" src="_React_CGF/StatsFilterSortTable.js"></script>
+    <script type="text/babel" src="_React_CGF/LogonR.js"></script>
+    <script type="text/babel" src="_React_CGF/ProfileR.js"></script>
+    <script type="text/babel" src="_React_CGF/LogoffR.js"></script>
+
+    <script type="text/babel">
+        "use strict";
+
+        dropDownFW({
+            dropHeaderStyle: "dropHeader",
+            dropContentStyle: "dropContent",
+            showStyle: "show",
+            hideStyle: "hide"
+        });
+
+        const Link = ReactRouterDOM.Link;
+        const Route = ReactRouterDOM.Route;
+
+        const App = () => (
+            <ReactRouterDOM.HashRouter>
+                <div id="titleNav">
+                    <div id="title">
+                        Eagles Defense
+                    </div>
+
+                    <div id="nav">
+                        <div className="dropDown">
+                            <Link to="/home">Home</Link>
+                        </div>
+
+                        <div className="dropDown">
+                            <div className="dropHeader">Account</div>
+                            <div className="dropContent">
+                                <Link to="/userInsert">Register</Link> <br />
+                                <Link to="/login">Log In</Link> <br />
+                                <Link to="/logout">Log Out</Link> <br />
+                                <Link to="/profile">Get Profile</Link> <br />
+                            </div>
+                        </div>
+
+                        <div className="dropDown">
+                            <div className="dropHeader">Search</div>
+                            <div className="dropContent">
+                                <Link to="/usersReact">Users</Link> <br />
+                                <Link to="/otherReact">Stats</Link> <br />
+                            </div>
+                        </div>
+
+                        <div className="dropDown">
+                            <div className="dropHeader">Homework</div>
+                            <div className="dropContent">
+                                <Link to="/blog">Blog</Link> <br />
+                                <a target="_blank" href="docs/DB_proposal.pdf">My DB PDF</a> <br />
+                                <Link to="/defender">JS Defender Objects</Link><br />
+                                <a target="_blank" href="webUser/getAll">Users Web API</a><br />
+                                <a target="_blank" href="stats/getAll">Stats Web API</a><br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="content">
+                    <Route path="/" exact component={HomeR} />
+                    <Route path="/home" component={HomeR} />
+                    <Route path="/myObj" component={() => <ConvertEle ele={MakeObj_CGF()} />} />
+                    <Route path="/blog" component={BlogR} />
+                    <Route path="/defender" component={() => <ConvertEle ele={MakeDefender_CGF()} />} />
+                    <Route path="/usersReact" component={UserFilterSortTable} />
+                    <Route path="/otherReact" component={StatsFilterSortTable} />
+                    <Route path="/login" component={LogonR} />
+                    <Route path="/logout" component={LogoffR} />
+                    <Route path="/profile" component={ProfileR} />
+
+                    <Route path="/userInsert" component={UserInsertOrUpdate} />
+                    <Route path="/userUpdate/:id" component={UserInsertOrUpdate} />
+
+                    <Route path="/statsInsert" component={StatsInsertOrUpdate} />
+                    <Route path="/statsUpdate/:id" component={StatsInsertOrUpdate} />
+                </div>
+
+                <div id="footer">
+                    [Chris Verna]
+                </div>
+            </ReactRouterDOM.HashRouter>
+        );
+
+        ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+
+</body>
+
+</html>

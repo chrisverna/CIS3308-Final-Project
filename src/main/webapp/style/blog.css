@@ -1,0 +1,49 @@
+.blog {
+    background-color: #004C54;
+    padding:2rem;
+    border-radius: 10px;
+    border: 3px solid #A5ACAF;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 2);
+    color: white;
+}
+.blog h4 {
+    color: white;
+    margin-top: 0;
+    font-family: 'Arial Black', 'Franklin Gothic Heavy', sans-serif;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid #A5ACAF;
+}
+.blog .section {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+    border-left: 5px solid #A5ACAF;
+}
+.blog .section h3 {
+    color: white;
+    font-family: 'Arial Black', 'Franklin Gothic Heavy', sans-serif;
+    margin-top: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.blog p {
+    color: #FFFFFF; /* White text */
+    line-height: 1.6;
+    font-size: 1rem;
+}
+.blog ul {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3); /* Dark background for list */
+    padding: 1rem 1rem 1rem 2rem;
+    border-radius: 5px;
+    border: 1px solid #A5ACAF;
+}
+.blog a {
+    color: #A5ACAF; /* Eagles Silver for links */
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px solid #A5ACAF;
+    transition: color 0.3s, border-color 0.3s;
+}

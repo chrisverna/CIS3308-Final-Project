@@ -1,0 +1,99 @@
+.clickSort {
+    background-color: #ffffff;
+    color: #111111;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+    border-radius: 12px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+    overflow-x: auto;
+}
+
+.clickSort h3 {
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+    color: #004C54;
+    font-size: 1.6rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.clickSort input {
+    padding: 0.45rem 0.6rem;
+    font-size: 1rem;
+    border: 1px solid #A5ACAF;
+    border-radius: 6px;
+}
+
+.clickSort button {
+    padding: 0.45rem 0.85rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #004C54;
+    color: white;
+    cursor: pointer;
+}
+
+.clickSort button:hover {
+    background-color: #00343a;
+}
+
+.clickSort table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.clickSort th,
+.clickSort td {
+    padding: 0.8rem;
+    border-bottom: 1px solid #d9d9d9;
+    vertical-align: middle;
+}
+
+.clickSort th {
+    background-color: #004C54;
+    color: white;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.clickSort th img {
+    width: 14px;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+.clickSort th.sortable {
+    cursor: pointer;
+}
+
+.clickSort tr:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+.clickSort tr:hover {
+    background-color: #eef6f7;
+}
+
+.textAlignRight {
+    text-align: right;
+}
+
+.textAlignCenter {
+    text-align: center;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.shadowImage img {
+    width: 70px;
+    max-width: 70px;
+    border-radius: 6px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+}

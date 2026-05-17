@@ -1,0 +1,68 @@
+.home {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    background-color: #004C54; /* Eagles Midnight Green */
+    color: white;
+    min-height: 100vh;
+    padding: 2rem;
+    font-family: 'Arial', sans-serif;
+}
+.home .hero {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: bold;
+    text-align: center;
+    color: #FFFFFF; /* White */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    background: linear-gradient(to right, #004C54, #000000, #004C54); /* Eagles gradient */
+    border-radius: 10px;
+    border: 3px solid #A5ACAF; /* Eagles Silver border */
+}
+.home .features {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    padding: 2.5rem;
+    margin: 3rem auto;
+    border-radius: 12px;
+    max-width: 800px;
+    border: 2px solid #A5ACAF; /* Silver border */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+.home .features h4 {
+    color: #FFFFFF; /* White */
+    font-family: 'Arial Black', 'Franklin Gothic Heavy', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #A5ACAF; /* Silver underline */
+    padding-bottom: 1rem;
+    letter-spacing: 1.5px;
+}
+.home .features p {
+    color: #FFFFFF; /* White */
+    font-size: 1.4rem;
+    line-height: 1.8;
+    text-align: center;
+    margin: 0;
+}
+.home .image-section {
+    text-align: center;
+    margin: 4rem 0;
+    padding: 2rem;
+}
+.home .image-section img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+    border: 5px solid #A5ACAF; /* Eagles Silver border */
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}

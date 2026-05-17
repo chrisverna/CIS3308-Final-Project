@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--Browser tab title -->
+    <title>Philadelphia Eagles Defender Stats</title>
+
+    <!-- External style sheet -->
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+<body>
+
+    <div id="titleNav">
+
+        <div id="pageTitle">
+            Philadelphia Eagles Defender Stats
+        </div>
+
+        <div id="nav">
+            <a href="index.html" class="navLink">Home</a>
+            <a href="blog.html" class="navLink">Blog</a>
+        </div>
+
+    </div>
+
+    <div id="content">
+
+        <p>
+            Philadelphia Eagles Defender Stats is a fan-focused web application where
+            registered users can contribute and manage defensive statistics for
+            Philadelphia Eagles defenders. Users will be able to enter career-based
+            performance data such as tackles, sacks, and other metrics.
+        </p>
+
+        <p class="center">
+            <img src="pics/EaglesLogo.png" class="contentPic">
+        </p>
+
+        <h2>Blog</h2>
+
+        <h3>Proposed Database Table</h3>
+
+        <p>
+            To support this website, I propose an "Eagles Defender Stats" table.
+            Each record represents a set of statistics entered by a user for a
+            specific Eagles defender. The table is linked to the web_user table,
+            allowing each user to manage their own submitted statistics.
+        </p>
+
+        <ul>
+            <li>stats_id - INT (primary key, auto increment)</li>
+            <li>player_name - VARCHAR (unique)</li>
+            <li>image - VARCHAR</li>
+            <li>total_tackles - INT (nullable)</li>
+            <li>solo_tackles - INT (nullable)</li>
+            <li>interceptions - INT (nullable)</li>
+            <li>sacks - DECIMAL (nullable)</li>
+            <li>tackles_for_loss - INT (nullable)</li>
+            <li>accolades (probowl, all-pro, droy) - VARCHAR</li>
+            <li>web_user_id - INT (foreign key)</li>
+        </ul>
+
+        <h3>Server Page</h3>
+
+        <p>
+            Click <a href="hello" target="_blank" class="serverLink">here</a>
+            to see my published Server Side Page.
+        </p>
+
+        <h3>Database</h3>
+
+        <p>
+            My expierence with databases started with this class.
+            I've already felt like I've learned a decent bit, at least enough
+            to get my work done
+        </p>
+
+        </p>
+            During this homework, I found that writing the SQL commands was
+            probably the most difficult but also the most useful.
+            I'm getting used to what certain words do within the commands
+            and how to use them. Click
+            <a target="_blank" href="pics/Verna_database.pdf">here</a>
+            to see my database document.
+        </p>
+
+
+    </div>
+
+    <div id="footer">
+        Chris Verna
+    </div>
+
+</body>
+</html>

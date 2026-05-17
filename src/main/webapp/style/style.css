@@ -1,0 +1,100 @@
+/* Reset browser spacing */
+html, body {
+    margin: 0rem;
+    padding: 0rem;
+}
+
+/* Page body */
+body {
+    background-color: #004C54;
+    color: black;
+    font-family: sans-serif;
+}
+
+/* Fixed title + nav */
+#titleNav {
+    position: fixed;
+    top: 0rem;
+    left: 0rem;
+    width: 100%;
+    z-index: 1;
+
+    background-color: #004C54;
+    color: white;
+    font-family: serif;
+    letter-spacing: 0.1rem;
+    padding: 0.5rem;
+}
+
+/* Title text */
+#pageTitle {
+    font-size: 3rem;
+    white-space: nowrap;
+}
+
+/* Navigation bar */
+#nav {
+    text-align: right;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-right: 1rem;
+    padding-bottom: 0.75rem;
+    white-space: nowrap;
+}
+
+/* Prevent wrapping inside nav */
+#nav * {
+    white-space: inherit;
+}
+
+/* Nav links */
+#nav a {
+    text-decoration: none;
+    color: #C8C8C8;
+}
+
+#nav .navLink {
+    background-color: #444444;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+/* Content area */
+#content {
+    padding: 1rem;
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+}
+
+/* Content image */
+.contentPic {
+    width: 50%;
+    border-radius: 0.5rem;
+    box-shadow: 0.4rem 0.4rem 0.4rem rgba(0, 0, 0, 0.6);
+}
+
+/* Center helper */
+.center {
+    text-align: center;
+}
+
+/* Server page link (different from nav links) */
+#content a.serverLink {
+    color: #000000;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Fixed footer */
+#footer {
+    position: fixed;
+    bottom: 0rem;
+    left: 0rem;
+    width: 100%;
+    z-index: 1;
+
+    background-color: #004C54;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+}

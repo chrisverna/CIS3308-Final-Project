@@ -1,0 +1,41 @@
+.defender {
+    background-color: #004C54;
+    color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+    width: 20rem;
+    text-align: center;
+}
+
+.defender img {
+    width: 100%;
+    border-radius: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.defender h2 {
+    margin-bottom: 0.5rem;
+}
+
+.defender button {
+    margin-top: 0.5rem;
+    padding: 0.4rem;
+}
+
+.defender input,
+.defender select {
+    margin-top: 0.5rem;
+    padding: 0.4rem;
+    width: 80%;
+}
+
+.defender .errorMsg {
+    color: #FFB612;
+    margin-top: 0.5rem;
+}
+
+.defender .defenderInstructions {
+    font-size: 0.9rem;
+    margin-top: 0.75rem;
+}

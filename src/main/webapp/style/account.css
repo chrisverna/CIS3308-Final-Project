@@ -1,0 +1,91 @@
+.accountBox {
+    background-color: white;
+    color: #111;
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+.accountBox h2 {
+    margin-top: 0;
+    color: #004C54;
+    font-size: 2rem;
+}
+
+.accountForm {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    max-width: 450px;
+}
+
+.accountForm label {
+    font-weight: bold;
+    color: #004C54;
+}
+
+.accountForm input {
+    padding: 0.7rem;
+    font-size: 1rem;
+    border: 1px solid #A5ACAF;
+    border-radius: 6px;
+}
+
+.accountForm button {
+    margin-top: 0.5rem;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    background-color: #004C54;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.accountForm button:hover {
+    background-color: #00343a;
+}
+
+.accountCard {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.accountImageWrap {
+    flex: 0 0 220px;
+}
+
+.accountImage {
+    width: 220px;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+.accountInfo {
+    flex: 1;
+    min-width: 260px;
+}
+
+.accountInfo p {
+    margin: 0.6rem 0;
+    font-size: 1.05rem;
+}
+
+.accountError {
+    margin-top: 1rem;
+    color: #a00000;
+    font-weight: bold;
+}
+
+.accountMessage {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: #004C54;
+    font-weight: bold;
+}
